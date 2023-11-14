@@ -13,15 +13,13 @@ t_d_cell * createCell (int val, int max_level){ //max_level = list.max_level
     return cell;
 }
 
-void insertCellHeadList(t_d_cell* cell, t_d_list* list){
+void insertCellHeadLevel(t_d_cell* cell, t_d_list* list, int level){
     if(sizeof(cell->levels)/sizeof(t_d_cell*) > list->max_levels) {
         printf("Maximum number of levels exceeded.");
         return;
     }
-    for(int i=0; i < sizeof(cell->levels)/sizeof(t_d_cell*); i++) {
-        cell->levels[i] = list->head[i];
-        list->head[i] = cell;
-    }
+    cell->levels[level] = list->head[level];
+    list->head[level] = cell;
 }
 
 //will be called later in an iteration

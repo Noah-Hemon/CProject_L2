@@ -12,7 +12,7 @@ typedef struct s_d_cell{
 }t_d_cell;
 
 t_d_cell * createCell (int val, int max_level);
-void insertCellHeadList(t_d_cell* cell, struct s_d_list* list);
+void insertCellHeadLevel(t_d_cell* cell, struct s_d_list* list, int);
 void insertCellAscending(t_d_cell* cell, struct s_d_list* list,int level);
 void insertCellAscendingList(int tab[],t_d_cell* cell,struct s_d_list* list);
 
