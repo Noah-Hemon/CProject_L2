@@ -12,8 +12,8 @@ typedef struct s_d_cell{
 }t_d_cell;
 
 t_d_cell * createCell (int val, int max_level);
-void insertCellHeadLevel(t_d_cell* cell, struct s_d_list* list, int);
+void insertCellHeadLevel(t_d_cell* cell, struct s_d_list* list,int level);
 void insertCellAscending(t_d_cell* cell, struct s_d_list* list,int level);
-void insertCellAscendingList(int tab[],t_d_cell* cell,struct s_d_list* list);
+void insertCellAscendingList(int level ,t_d_cell* cell,struct s_d_list* list);
 
 #endif //PROJL2_CELL_H
