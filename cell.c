@@ -5,7 +5,7 @@
 
 t_d_cell * createCell (int val, int max_level){ //max_level = list.max_level
 
-    printf(" val : %d; Max lvl : %d",val,max_level);
+    //printf(" val : %d; Max lvl : %d",val,max_level);
     t_d_cell *cell = NULL;
     cell = (t_d_cell*) malloc(sizeof(t_d_cell));
     if(cell == NULL){printf(" no memory ");}

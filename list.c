@@ -83,11 +83,11 @@ int researchValueOptimized(t_d_list* list,int val){
             temp = temp->levels[i];
         }
         if(temp->value == val){
-            printf("Value found");
+            //printf("Value found");
             return 1;
         }
     }
-    printf("Value not found");
+    //printf("Value not found");
     return 0;
 }
 
@@ -97,11 +97,11 @@ int researchValueClassic(t_d_list* list, int val){
         temp = temp->levels[0];
     }
     if(temp == NULL){
-        printf("Value not found");
+        //printf("Value not found");
         return 0;
     }
     else{
-        printf("Value found");
+        //printf("Value found");
         return 1;
     }
 }

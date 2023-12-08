@@ -41,6 +41,7 @@ typedef struct caldendar{
 }calendar;
 
 void getContactInfo(entry* entry);
+entry* createEntry(void);
 void InsertAppointement(entry* entry, appointement* app);
 void createAppointement(entry* entry);
 void DisplayAppointements(entry* entry);
@@ -49,6 +50,10 @@ cal_cell * createCalCell(entry* ent);
 calendar * createCalendar(void);
 void replaceLetter(cal_cell * calCell,cal_cell * letter,calendar* cal);
 void insertCellAscendingCal(cal_cell * calCell, calendar* cal);
-
+void DisplayCalendar(calendar* cal);
+void GetString(char * surname,char * key_tab);
+cal_cell * SearchContactOptimized(calendar * cal,char * key_tab);
+cal_cell * SearchContactClassic(calendar * cal,char * key_tab);
+void insertCellClassic(cal_cell * newCell,calendar * cal);
 
 #endif //PROJL2_CALENDAR_H
