@@ -111,7 +111,7 @@ int researchValueClassic(t_d_list* list, int val){
 t_d_list * createComplexityList(int nbr_lvl){ //works in debug mode but not on release for reasons unknown
 
     // we create the levels tab which will have the number of levels to allocate to the cell
-    int nbr_cell = pow( 2,nbr_lvl)-1;
+    int nbr_cell = pow( 2,nbr_lvl);
     int* levels = calloc(nbr_cell, sizeof(int));
 
     for (int x=2;x<nbr_cell;x*=2){

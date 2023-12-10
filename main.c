@@ -26,8 +26,8 @@ int main() {
 
     //Part 2
 
-   /* t_timer _timer_;
-    t_d_list * listcomp = createComplexityList(3);
+    t_timer _timer_;
+    t_d_list * listcomp = createComplexityList(4);
     DisplaySortedList(listcomp);
     startTimer();
     //value search
@@ -67,7 +67,7 @@ int main() {
     DisplayCalendar(cal);
 */
 
-
+/*
     //Console interface
     calendar * cal = createCalendar();
     entry * newEntry;
@@ -217,5 +217,6 @@ int main() {
 
         case 4 : return 0;
     }
+    */
     return 0;
 }
